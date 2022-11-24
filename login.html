@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shop</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__container">
+				<a href="index.html">
+					<img src="images/logo.png" alt="logo" height="45">
+				</a>
+				<div class="header__info">
+					Hi, <a href="login.html" class="header__user" id="headerUser">Log in</a>
+					<div class="header__shop">
+						<a href="shoppingCart.html" id="headerShoppingCart">
+							<img src="images/shopping-cart.png" alt="shopping cart" height="20">
+							<span class="header__shop--count" id="headerShoppingCartCount">0</span>
+						</a>
+					</div>
+					<button class="header__logout" id="headerLogout">Log out</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="columns">
+			<form id="loginForm" class="userForm">
+				<p class="title">Secure Sign In</p>
+				<p class="desription">For current customers</p>
+
+				<div class="error">Invalid email address or password.</div>
+
+				<label>
+					<input id="signInEmail"  type="email" placeholder="Email Address" data-name="email" required>
+				</label>
+
+				<label>
+					<input id="signInPasswd" type="password" placeholder="Password" data-name="password" required>
+				</label>
+
+				<button id="signInBtn" class="btn">Sign in</button>
+			</form>
+
+			<form id="registrationForm" class="userForm">
+				<p class="title">Quick Registration</p>
+				<p class="desription">For new customers</p>
+
+				<div class="error">Invalid email address or password.</div>
+
+				<label>
+					<input id="userName" type="text" placeholder="Full name" data-name="name" required>
+				</label>
+
+				<label>
+					<input id="regEmail" type="email" placeholder="Email Address" data-name="email" required>
+				</label>
+
+				<label>
+					<input id="regPasswd" type="password" placeholder="Password" data-name="password" required>
+				</label>
+
+				<label>
+					<input id="regPasswdConfirm" type="password" placeholder="Verify Password" data-name="passwordVerify" required>
+				</label>
+
+				<button id="regBtn" class="btn">Create Account</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
